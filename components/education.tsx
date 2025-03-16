@@ -75,15 +75,24 @@ export default function Education() {
                     </div>
                   )}
                    {edu.clubs.length > 0 && (
-    <div className="mt-2">
-      <p className="font-medium mb-2">Clubs:</p>
-      <ul className="list-disc pl-5 space-y-1 text-muted-foreground">
-        {edu.clubs.map((club, i) => (
-          <li key={i}>{club}</li>
-        ))}
-      </ul>
-    </div>
-  )}
+                      <div className="mt-2">
+                          <p className="font-medium mb-2">Clubs:</p>
+                          <ul className="list-disc pl-5 space-y-1 text-muted-foreground">
+                            {edu.clubs.map((club, i) => (
+                          <li key={i}>{club}</li>
+                            ))}
+                        </ul>
+                    </div>
+                  )}
+                  <motion.div
+  className="w-full bg-muted rounded-full h-2 mt-4 overflow-hidden"
+  initial={{ width: 0 }}
+  whileInView={{ width: edu.school === "California State University, Monterey Bay" ? "75%" : "100%" }} 
+  transition={{ duration: 1, delay: 0.3 }}
+  viewport={{ once: true }}
+>
+  <div className="bg-primary h-2 rounded-full w-full" />
+</motion.div>
                 </CardContent>
               </Card>
             </motion.div>

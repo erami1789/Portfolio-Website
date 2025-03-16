@@ -60,16 +60,16 @@ export default function Contact() {
                     eramirezmartinez@csumb.edu
                   </a>
                 </div>
-                <div className="flex items-center gap-3">
+                {/* <div className="flex items-center gap-3">
                   <Phone className="h-5 w-5 text-gray-500 dark:text-gray-400" />
                   <a href="tel:8317894047" className="hover:underline hover:text-gray-600 dark:hover:text-gray-300">
                     (831) 789-4047
                   </a>
-                </div>
+                </div> */}
                 <div className="flex items-center gap-3">
                   <Linkedin className="h-5 w-5 text-gray-500 dark:text-gray-400" />
                   <a
-                    href="https://linkedin.com/in/emiliano-ramirez"
+                    href="https://www.linkedin.com/in/emiliano-ramirez-martinez-5619b5336/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:underline hover:text-gray-600 dark:hover:text-gray-300"

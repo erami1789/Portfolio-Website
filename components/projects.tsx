@@ -15,17 +15,15 @@ const projects = [
       "Accessed and controlled the robot remotely using SSH to deploy and test code directly on the hardware. Mentored and guided a high school team, providing technical support and helping them understand robotics concepts and coding principles. Analyzed and modified Farm-ng's codebase to integrate new robot functionalities, improving performance and adaptability.",
     technologies: ["Python", "C", "C++", "Hardware"],
     period: "August 2024 – December 2024",
-    github: "#",
-    liveDemo: null,
+  
   },
   {
-    title: "3DRNA Lab Research Portal",
-    description:
-      "Developed a comprehensive web application to showcase the 3DRNA Lab's research findings and data visualizations. Implemented interactive 3D models of RNA structures using Three.js, allowing researchers to manipulate and analyze molecular structures in real-time. Created a responsive dashboard for tracking research progress and displaying publication metrics.",
-    technologies: ["Next.js", "TypeScript", "Three.js", "Tailwind CSS", "React"],
-    period: "January 2025 – Present",
+      title: "Portfolio Website",
+      description:
+      "Designed and developed a personal portfolio website using Next.js and TypeScript, featuring a modern UI with Tailwind CSS. Implemented a responsive and interactive layout to showcase projects, experience, and skills. Integrated Framer Motion for smooth animations and optimized performance with static site generation (SSG). Deployed on Vercel for seamless CI/CD and fast global delivery.",
+      technologies: ["Next.js", "TypeScript", "Framer Motion", "Tailwind CSS", "React", "Vercel"],
     github: "#",
-    liveDemo: "#",
+    
   },
 ]
 
@@ -86,7 +84,7 @@ export default function Projects() {
                     </a>
                   </Button>
 
-                  {project.liveDemo && (
+                  {/* {project.liveDemo && (
                     <Button
                       variant="outline"
                       size="sm"
@@ -98,7 +96,7 @@ export default function Projects() {
                         Live Demo
                       </a>
                     </Button>
-                  )}
+                  )} */}
                 </CardFooter>
               </Card>
             </motion.div>
