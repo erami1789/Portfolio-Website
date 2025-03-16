@@ -9,7 +9,7 @@ export default function Hero() {
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 bg-grid-small-white/[0.2] dark:bg-grid-small-white/[0.05] bg-[length:20px_20px]" />
-      <div className="absolute inset-0 bg-gradient-to-b from-blue-500/10 via-blue-500/5 to-background" />
+      <div className="absolute inset-0 bg-gradient-to-b from-gray-500/10 via-gray-500/5 to-background" />
 
       <div className="container relative z-10 flex flex-col items-center text-center">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
@@ -34,7 +34,7 @@ export default function Hero() {
             asChild
             variant="outline"
             size="icon"
-            className="border-blue-200 hover:border-blue-300 hover:bg-blue-100/50 dark:border-blue-800 dark:hover:border-blue-700 dark:hover:bg-blue-900/50"
+            className="border-gray-200 hover:border-gray-300 hover:bg-gray-100/50 dark:border-gray-700 dark:hover:border-gray-600 dark:hover:bg-gray-800/50"
           >
             <Link href="https://github.com/erami1789" target="_blank" aria-label="GitHub">
               <Github className="h-5 w-5" />
@@ -44,9 +44,9 @@ export default function Hero() {
             asChild
             variant="outline"
             size="icon"
-            className="border-blue-200 hover:border-blue-300 hover:bg-blue-100/50 dark:border-blue-800 dark:hover:border-blue-700 dark:hover:bg-blue-900/50"
+            className="border-gray-200 hover:border-gray-300 hover:bg-gray-100/50 dark:border-gray-700 dark:hover:border-gray-600 dark:hover:bg-gray-800/50"
           >
-            <Link href="https://linkedin.com/in/emiliano-ramirez" target="_blank" aria-label="LinkedIn">
+            <Link href="https://www.linkedin.com/in/emiliano-ramirez-martinez-5619b5336/" target="_blank" aria-label="LinkedIn">
               <Linkedin className="h-5 w-5" />
             </Link>
           </Button>
@@ -54,7 +54,7 @@ export default function Hero() {
             asChild
             variant="outline"
             size="icon"
-            className="border-blue-200 hover:border-blue-300 hover:bg-blue-100/50 dark:border-blue-800 dark:hover:border-blue-700 dark:hover:bg-blue-900/50"
+            className="border-gray-200 hover:border-gray-300 hover:bg-gray-100/50 dark:border-gray-700 dark:hover:border-gray-600 dark:hover:bg-gray-800/50"
           >
             <Link href="mailto:eramirezmartinez@csumb.edu" aria-label="Email">
               <Mail className="h-5 w-5" />
@@ -65,14 +65,14 @@ export default function Hero() {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.4 }}
-          className="absolute bottom-10"
+          transition={{ duration: 1.0, delay: 0.9 }}
+          className="absolute bottom-0"
         >
           <Link href="#about">
             <Button
               variant="ghost"
               size="icon"
-              className="animate-bounce text-blue-600 hover:text-blue-700 hover:bg-blue-100/50 dark:text-blue-400 dark:hover:text-blue-300 dark:hover:bg-blue-900/50"
+              className="animate-bounce text-gray-600 hover:text-gray-700 hover:bg-gray-100/50 dark:text-gray-400 dark:hover:text-gray-300 dark:hover:bg-gray-800/50"
             >
               <ArrowDown className="h-6 w-6" />
             </Button>

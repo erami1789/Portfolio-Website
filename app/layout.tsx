@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata = {
   title: "Emiliano Ramirez | Portfolio",
   description: "Personal portfolio website of Emiliano Ramirez, Computer Science student and developer.",
-    generator: 'v0.dev'
+    
 }
 
 export default function RootLayout({

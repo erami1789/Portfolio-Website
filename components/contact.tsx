@@ -35,7 +35,7 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="py-20 bg-blue-50/50 dark:bg-blue-950/20">
+    <section id="contact" className="py-20 bg-gray-50/50 dark:bg-gray-900/20">
       <div className="container">
         <h2 className="text-3xl font-bold mb-10 text-center">Contact Me</h2>
 
@@ -45,45 +45,45 @@ export default function Contact() {
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
             transition={{ duration: 0.5 }}
           >
-            <Card className="h-full border-blue-200 dark:border-blue-800">
+            <Card className="h-full border-gray-200 dark:border-gray-800">
               <CardHeader>
                 <CardTitle>Get In Touch</CardTitle>
                 <CardDescription>Feel free to reach out to me directly</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="flex items-center gap-3">
-                  <Mail className="h-5 w-5 text-blue-500 dark:text-blue-400" />
+                  <Mail className="h-5 w-5 text-gray-500 dark:text-gray-400" />
                   <a
                     href="mailto:eramirezmartinez@csumb.edu"
-                    className="hover:underline hover:text-blue-600 dark:hover:text-blue-300"
+                    className="hover:underline hover:text-gray-600 dark:hover:text-gray-300"
                   >
                     eramirezmartinez@csumb.edu
                   </a>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Phone className="h-5 w-5 text-blue-500 dark:text-blue-400" />
-                  <a href="tel:8317894047" className="hover:underline hover:text-blue-600 dark:hover:text-blue-300">
+                  <Phone className="h-5 w-5 text-gray-500 dark:text-gray-400" />
+                  <a href="tel:8317894047" className="hover:underline hover:text-gray-600 dark:hover:text-gray-300">
                     (831) 789-4047
                   </a>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Linkedin className="h-5 w-5 text-blue-500 dark:text-blue-400" />
+                  <Linkedin className="h-5 w-5 text-gray-500 dark:text-gray-400" />
                   <a
                     href="https://linkedin.com/in/emiliano-ramirez"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:underline hover:text-blue-600 dark:hover:text-blue-300"
+                    className="hover:underline hover:text-gray-600 dark:hover:text-gray-300"
                   >
                     linkedin.com/in/emiliano-ramirez
                   </a>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Github className="h-5 w-5 text-blue-500 dark:text-blue-400" />
+                  <Github className="h-5 w-5 text-gray-500 dark:text-gray-400" />
                   <a
                     href="https://github.com/erami1789"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:underline hover:text-blue-600 dark:hover:text-blue-300"
+                    className="hover:underline hover:text-gray-600 dark:hover:text-gray-300"
                   >
                     github.com/erami1789
                   </a>
@@ -97,7 +97,7 @@ export default function Contact() {
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 20 }}
             transition={{ duration: 0.5 }}
           >
-            <Card className="border-blue-200 dark:border-blue-800">
+            <Card className="border-gray-200 dark:border-gray-800">
               <CardHeader>
                 <CardTitle>Send a Message</CardTitle>
                 <CardDescription>I'll get back to you as soon as possible</CardDescription>
@@ -111,7 +111,7 @@ export default function Contact() {
                       value={formState.name}
                       onChange={handleChange}
                       required
-                      className="border-blue-200 focus:border-blue-400 dark:border-blue-800 dark:focus:border-blue-600"
+                      className="border-gray-200 focus:border-gray-400 dark:border-gray-700 dark:focus:border-gray-600"
                     />
                   </div>
                   <div className="space-y-2">
@@ -122,7 +122,7 @@ export default function Contact() {
                       value={formState.email}
                       onChange={handleChange}
                       required
-                      className="border-blue-200 focus:border-blue-400 dark:border-blue-800 dark:focus:border-blue-600"
+                      className="border-gray-200 focus:border-gray-400 dark:border-gray-700 dark:focus:border-gray-600"
                     />
                   </div>
                   <div className="space-y-2">
@@ -133,12 +133,12 @@ export default function Contact() {
                       value={formState.message}
                       onChange={handleChange}
                       required
-                      className="border-blue-200 focus:border-blue-400 dark:border-blue-800 dark:focus:border-blue-600"
+                      className="border-gray-200 focus:border-gray-400 dark:border-gray-700 dark:focus:border-gray-600"
                     />
                   </div>
                   <Button
                     type="submit"
-                    className="w-full bg-blue-600 hover:bg-blue-700 dark:bg-blue-600 dark:hover:bg-blue-500"
+                    className="w-full bg-gray-700 hover:bg-gray-800 dark:bg-gray-600 dark:hover:bg-gray-500"
                   >
                     Send Message
                   </Button>
@@ -151,4 +151,6 @@ export default function Contact() {
     </section>
   )
 }
+
+
 

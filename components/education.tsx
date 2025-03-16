@@ -28,7 +28,7 @@ export default function Education() {
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
   return (
-    <section id="education" className="py-20 bg-blue-50/50 dark:bg-blue-950/20">
+    <section id="education" className="py-20 bg-gray-50/50 dark:bg-gray-900/20">
       <div className="container">
         <h2 className="text-3xl font-bold mb-10 text-center">Education</h2>
 
@@ -40,14 +40,14 @@ export default function Education() {
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <Card className="border-blue-200 dark:border-blue-800">
+              <Card className="border-gray-200 dark:border-gray-800">
                 <CardHeader>
                   <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2">
                     <div>
                       <CardTitle>{edu.school}</CardTitle>
                       <CardDescription className="mt-1">{edu.location}</CardDescription>
                     </div>
-                    <Badge variant="outline" className="md:ml-auto shrink-0 border-blue-300 dark:border-blue-700">
+                    <Badge variant="outline" className="md:ml-auto shrink-0 border-gray-300 dark:border-gray-700">
                       {edu.period}
                     </Badge>
                   </div>
@@ -73,4 +73,6 @@ export default function Education() {
     </section>
   )
 }
+
+
 

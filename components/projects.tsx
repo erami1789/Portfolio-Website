@@ -34,7 +34,7 @@ export default function Projects() {
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
   return (
-    <section id="projects" className="py-20 bg-blue-50/50 dark:bg-blue-950/20">
+    <section id="projects" className="py-20 bg-gray-50/50 dark:bg-gray-900/20">
       <div className="container">
         <h2 className="text-3xl font-bold mb-10 text-center">Projects</h2>
 
@@ -47,7 +47,7 @@ export default function Projects() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="h-full"
             >
-              <Card className="h-full flex flex-col border-blue-200 dark:border-blue-800">
+              <Card className="h-full flex flex-col border-gray-200 dark:border-gray-800">
                 <CardHeader>
                   <CardTitle>{project.title}</CardTitle>
                   <CardDescription>{project.period}</CardDescription>
@@ -59,7 +59,7 @@ export default function Projects() {
                       <Badge
                         key={i}
                         variant="secondary"
-                        className="bg-blue-100 text-blue-800 hover:bg-blue-200 dark:bg-blue-900 dark:text-blue-200 dark:hover:bg-blue-800"
+                        className="bg-gray-100 text-gray-800 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-200 dark:hover:bg-gray-700"
                       >
                         {tech}
                       </Badge>
@@ -71,7 +71,7 @@ export default function Projects() {
                     variant="outline"
                     size="sm"
                     asChild
-                    className="border-blue-300 hover:border-blue-400 hover:bg-blue-100/50 dark:border-blue-700 dark:hover:border-blue-600 dark:hover:bg-blue-900/50"
+                    className="border-gray-300 hover:border-gray-400 hover:bg-gray-100/50 dark:border-gray-700 dark:hover:border-gray-600 dark:hover:bg-gray-800/50"
                   >
                     <a href={project.github} target="_blank" rel="noopener noreferrer">
                       <Github className="mr-2 h-4 w-4" />
@@ -84,7 +84,7 @@ export default function Projects() {
                       variant="outline"
                       size="sm"
                       asChild
-                      className="border-blue-300 hover:border-blue-400 hover:bg-blue-100/50 dark:border-blue-700 dark:hover:border-blue-600 dark:hover:bg-blue-900/50"
+                      className="border-gray-300 hover:border-gray-400 hover:bg-gray-100/50 dark:border-gray-700 dark:hover:border-gray-600 dark:hover:bg-gray-800/50"
                     >
                       <a href={project.liveDemo} target="_blank" rel="noopener noreferrer">
                         <ExternalLink className="mr-2 h-4 w-4" />

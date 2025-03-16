@@ -9,7 +9,7 @@ import { cn } from "@/lib/utils"
 import { motion } from "framer-motion"
 
 const navItems = [
-  { name: "About", href: "#about" },
+  { name: "Home", href: "#" },
   { name: "Education", href: "#education" },
   { name: "Experience", href: "#experience" },
   { name: "Projects", href: "#projects" },
@@ -37,13 +37,13 @@ export default function Navbar() {
       className={cn(
         "fixed top-0 z-50 w-full transition-all duration-300",
         scrolled
-          ? "bg-background/80 backdrop-blur-md border-b border-blue-200/50 dark:border-blue-800/50"
+          ? "bg-background/80 backdrop-blur-md border-b border-gray-200/50 dark:border-gray-800/50"
           : "bg-transparent",
       )}
     >
       <div className="container flex h-16 items-center justify-between">
-        <Link href="/" className="font-bold text-xl text-blue-600 dark:text-blue-400">
-          ER
+        <Link href="/" className="font-bold text-xl text-gray-700 dark:text-gray-300">
+          EMILIANO RAMIREZ
         </Link>
 
         {/* Desktop Navigation */}
@@ -52,7 +52,7 @@ export default function Navbar() {
             <Link
               key={item.name}
               href={item.href}
-              className="text-muted-foreground hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+              className="text-muted-foreground hover:text-gray-700 dark:hover:text-gray-300 transition-colors"
             >
               {item.name}
             </Link>
@@ -68,7 +68,7 @@ export default function Navbar() {
             size="icon"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
-            className="text-blue-600 hover:text-blue-700 hover:bg-blue-100/50 dark:text-blue-400 dark:hover:text-blue-300 dark:hover:bg-blue-900/50"
+            className="text-gray-600 hover:text-gray-700 hover:bg-gray-100/50 dark:text-gray-400 dark:hover:text-gray-300 dark:hover:bg-gray-800/50"
           >
             {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </Button>
@@ -82,7 +82,7 @@ export default function Navbar() {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
           transition={{ duration: 0.2 }}
-          className="md:hidden bg-background border-b border-blue-200 dark:border-blue-800"
+          className="md:hidden bg-background border-b border-gray-200 dark:border-gray-800"
         >
           <div className="container py-4 flex flex-col space-y-4">
             {navItems.map((item) => (
@@ -90,7 +90,7 @@ export default function Navbar() {
                 key={item.name}
                 href={item.href}
                 onClick={() => setIsOpen(false)}
-                className="text-muted-foreground hover:text-blue-600 dark:hover:text-blue-400 transition-colors py-2"
+                className="text-muted-foreground hover:text-gray-700 dark:hover:text-gray-300 transition-colors py-2"
               >
                 {item.name}
               </Link>

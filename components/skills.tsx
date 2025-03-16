@@ -46,7 +46,7 @@ export default function Skills() {
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <Card className="border-blue-200 dark:border-blue-800">
+              <Card className="border-gray-200 dark:border-gray-800">
                 <CardHeader>
                   <CardTitle className="text-xl">{category.category}</CardTitle>
                 </CardHeader>
@@ -56,7 +56,7 @@ export default function Skills() {
                       <Badge
                         key={i}
                         variant="secondary"
-                        className="bg-blue-100 text-blue-800 hover:bg-blue-200 dark:bg-blue-900 dark:text-blue-200 dark:hover:bg-blue-800"
+                        className="bg-gray-100 text-gray-800 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-200 dark:hover:bg-gray-700"
                       >
                         {skill}
                       </Badge>

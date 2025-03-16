@@ -60,7 +60,7 @@ export default function Experience() {
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <Card className="border-blue-200 dark:border-blue-800">
+              <Card className="border-gray-200 dark:border-gray-800">
                 <CardHeader>
                   <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2">
                     <div>
@@ -69,7 +69,7 @@ export default function Experience() {
                         {exp.company} • {exp.location}
                       </CardDescription>
                     </div>
-                    <Badge variant="outline" className="md:ml-auto shrink-0 border-blue-300 dark:border-blue-700">
+                    <Badge variant="outline" className="md:ml-auto shrink-0 border-gray-300 dark:border-gray-700">
                       {exp.period}
                     </Badge>
                   </div>
