@@ -68,7 +68,7 @@ export default function Hero() {
           transition={{ duration: 1.0, delay: 0.9 }}
           className="absolute bottom-0"
         >
-          <Link href="#about">
+          <Link href="#education">
             <Button
               variant="ghost"
               size="icon"

@@ -19,18 +19,6 @@ const experiences = [
     ],
   },
   {
-    title: "Gaining Early Awareness and Readiness for Undergraduate Programs",
-    company: "University of California, Santa Cruz",
-    location: "Santa Cruz, CA",
-    period: "May 2023 – Jan 2025",
-    description: [
-      "Utilize specialized software to input, manage, and process sensitive student data securely.",
-      "Provide tutoring, mentoring, and counseling in one-on-one and in-class settings.",
-      "Increase student academic performance and preparation for college.",
-      "Create workshops, presentations, financial aid advising, & educational field trips.",
-    ],
-  },
-  {
     title: "Professional Photographer",
     company: "Emis.Portfolio",
     location: "Bay Area, CA",
@@ -41,6 +29,18 @@ const experiences = [
       "Consult with clients to tailor photography packages to their needs, ensuring a seamless experience.",
     ],
   },
+  {
+    title: "Gaining Early Awareness and Readiness for Undergraduate Programs",
+    company: "University of California, Santa Cruz",
+    location: "Santa Cruz, CA",
+    period: "May 2023 – Jan 2025",
+    description: [
+      "Utilize specialized software to input, manage, and process sensitive student data securely.",
+      "Provide tutoring, mentoring, and counseling in one-on-one and in-class settings.",
+      "Create workshops, presentations, financial aid advising, & educational field trips.",
+    ],
+  },
+
 ]
 
 export default function Experience() {
@@ -59,8 +59,14 @@ export default function Experience() {
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
+
+              whileHover={{
+                scale: 1.05, // Slightly enlarges the card
+                boxShadow: "0px 10px 30px rgba(0, 0, 0, 0.15)", // Adds a soft shadow
+                borderColor: "#0EA5E9", // Changes border color to sky blue
+              }}
             >
-              <Card className="border-gray-200 dark:border-gray-800">
+              <Card className="border-gray-200 dark:border-gray-800 transition-all duration-300">
                 <CardHeader>
                   <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2">
                     <div>

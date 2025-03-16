@@ -45,6 +45,11 @@ export default function Skills() {
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
+              whileHover={{
+                scale: 1.05, // Slightly enlarges the card
+                boxShadow: "0px 10px 30px rgba(0, 0, 0, 0.15)", // Adds a soft shadow
+                borderColor: "#0EA5E9", // Changes border color to sky blue
+              }}
             >
               <Card className="border-gray-200 dark:border-gray-800">
                 <CardHeader>
